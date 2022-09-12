@@ -1,7 +1,7 @@
 from facebook_scraper import get_posts
 import pandas as pd
 
-posts = get_posts('Eduvate-1311710185651473', pages=60, extra_info=True)
+posts = get_posts('write facebook page name', pages=60, extra_info=True)
 post_date_arr = []
 likes_arr = []
 comments_arr = []
@@ -24,7 +24,7 @@ df.to_csv('out.csv')
     
 """from facebook_scraper import get_posts
 
-credentials = ('100082592085078','ha1ab3ho4')
+credentials = ('write your facebook username','write your facebook password')
 posts = get_posts('CAD.MASTERS', pages=10, extra_info=True,credentials = credentials)
 #post is a dictionary, and reactions is a dictionary
 # then reacts is a dictionary
