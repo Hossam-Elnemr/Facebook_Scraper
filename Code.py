@@ -26,8 +26,6 @@ df.to_csv('out.csv')
 
 credentials = ('write your facebook username','write your facebook password')
 posts = get_posts('CAD.MASTERS', pages=10, extra_info=True,credentials = credentials)
-#post is a dictionary, and reactions is a dictionary
-# then reacts is a dictionary
 for post in posts:
     print('Posted at: ', post['time'])
     print('number of likes: ',post["likes"] )
